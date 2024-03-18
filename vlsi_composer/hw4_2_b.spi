@@ -1,0 +1,98 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw4_2_b
+* View Name:     schematic
+* Netlisted on:  Dec 17 15:29:42 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_b_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_b_inv IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM0 OUT IN VDD VDD P_18 W=1.8u L=200.0n
+MM1 OUT IN VSS VSS N_18 W=600.0n L=200.0n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_DFF_mas
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_DFF_mas C D Q VDD VSS
+*.PININFO C:B D:B Q:B VDD:B VSS:B
+MM9 net052 net7 net013 VSS N_18 W=800.0n L=200.0n
+MM2 net39 net7 net4 VSS N_18 W=800.0n L=200.0n
+MM1 net1 C net4 VSS N_18 W=800.0n L=200.0n
+MM8 net048 C net013 VSS N_18 W=800.0n L=200.0n
+MM11 net013 C net052 VDD P_18 W=800.0n L=200.0n
+MM10 net013 net7 net048 VDD P_18 W=800.0n L=200.0n
+MM3 net4 C net39 VDD P_18 W=800.0n L=200.0n
+MM0 net4 net7 net1 VDD P_18 W=800.0n L=200.0n
+XI9 net4 net36 VDD VSS / hw4_2_b_inv
+XI12 net013 Q VDD VSS / hw4_2_b_inv
+XI11 net36 net048 VDD VSS / hw4_2_b_inv
+XI10 Q net052 VDD VSS / hw4_2_b_inv
+XI2 net36 net1 VDD VSS / hw4_2_b_inv
+XI1 D net39 VDD VSS / hw4_2_b_inv
+XI0 C net7 VDD VSS / hw4_2_b_inv
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_inv_chain
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_inv_chain IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM15 OUT net076 VSS VSS N_18 W=600.0n L=180.00n m=100
+MM13 net080 net054 VSS VSS N_18 W=600.0n L=180.00n m=100
+MM14 net076 net080 VSS VSS N_18 W=600.0n L=180.00n m=1
+MM12 net054 net070 VSS VSS N_18 W=600.0n L=180.00n m=1
+MM3 net1 net5 VSS VSS N_18 W=600.0n L=180.00n m=100
+MM1 net5 IN VSS VSS N_18 W=600.0n L=180.00n m=1
+MM5 net9 net1 VSS VSS N_18 W=600.0n L=180.00n m=1
+MM7 net070 net9 VSS VSS N_18 W=600.0n L=180.00n m=multi
+MM16 net054 net070 VDD VDD P_18 W=1.8u L=180.00n m=1
+MM17 net080 net054 VDD VDD P_18 W=1.8u L=180.00n m=100
+MM18 net076 net080 VDD VDD P_18 W=1.8u L=180.00n m=1
+MM19 OUT net076 VDD VDD P_18 W=1.8u L=180.00n m=100
+MM2 net1 net5 VDD VDD P_18 W=1.8u L=180.00n m=100
+MM0 net5 IN VDD VDD P_18 W=1.8u L=180.00n m=1
+MM4 net9 net1 VDD VDD P_18 W=1.8u L=180.00n m=1
+MM6 net070 net9 VDD VDD P_18 W=1.8u L=180.00n m=multi
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_b
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_b C D1 Q2 VDD VSS
+*.PININFO C:B D1:B Q2:B VDD:B VSS:B
+XI0 C D1 Q1 VDD VSS / hw4_2_DFF_mas
+XI5 C D2 Q2 VDD VSS / hw4_2_DFF_mas
+XI4 Q1 D2 VDD VSS / hw4_2_inv_chain
+.ENDS
+

@@ -1,0 +1,121 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw5_1_up_cnt
+* View Name:     schematic
+* Netlisted on:  Dec 19 15:08:03 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_b_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_b_inv IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM0 OUT IN VDD VDD P_18 W=wp L=180.0n
+MM1 OUT IN VSS VSS N_18 W=250.00n L=180.0n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_DFF CLK D Q VDD VSS
+*.PININFO CLK:B D:B Q:B VDD:B VSS:B
+XI12 net112 Q VDD VSS / hw4_2_b_inv
+XI11 net76 net83 VDD VSS / hw4_2_b_inv
+XI10 Q net79 VDD VSS / hw4_2_b_inv
+XI2 net76 net75 VDD VSS / hw4_2_b_inv
+XI1 D net71 VDD VSS / hw4_2_b_inv
+XI0 CLK net67 VDD VSS / hw4_2_b_inv
+XI9 net120 net76 VDD VSS / hw4_2_b_inv
+MM11 net112 CLK net79 VDD P_18 W=250.00n L=180.00n
+MM10 net112 net67 net83 VDD P_18 W=250.00n L=180.00n
+MM3 net120 CLK net71 VDD P_18 W=250.00n L=180.00n
+MM0 net120 net67 net75 VDD P_18 W=250n L=180n
+MM9 net79 net67 net112 VSS N_18 W=250.00n L=180.00n
+MM2 net71 net67 net120 VSS N_18 W=250.00n L=180.00n
+MM1 net75 CLK net120 VSS N_18 W=250.00n L=180.00n
+MM8 net83 CLK net112 VSS N_18 W=250.00n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_xor
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_xor A B VDD VSS Y
+*.PININFO A:B B:B VDD:B VSS:B Y:B
+MM5 Y net9 B VSS N_18 W=250.00n L=180.00n
+MM4 Y B net9 VSS N_18 W=250.00n L=180.00n
+MM3 net9 A VSS VSS N_18 W=250.00n L=180.00n
+MM2 Y A B VDD P_18 W=250.00n L=180.00n
+MM1 Y B A VDD P_18 W=250.00n L=180.00n
+MM0 net9 A VDD VDD P_18 W=250.00n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_nand2 A B OUT VDD VSS
+*.PININFO A:B B:B OUT:B VDD:B VSS:B
+MM4 net6 B VSS VSS N_18 W=250.00n L=180.00n
+MM3 OUT A net6 VSS N_18 W=250.00n L=180.00n
+MM1 OUT B VDD VDD P_18 W=250.00n L=180.00n
+MM0 OUT A VDD VDD P_18 W=250.00n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_half_adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_half_adder A B C S VDD VSS
+*.PININFO A:B B:B C:B S:B VDD:B VSS:B
+MM0 C net20 VDD VDD P_18 W=250.00n L=180.00n
+MM1 C net20 VSS VSS N_18 W=250.00n L=180.00n
+XI1 A B VDD VSS S / hw5_1_xor
+XI0 A B net20 VDD VSS / hw5_1_nand2
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_up_cnt
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_up_cnt CLK OUT0 OUT1 OUT2 OUT3 VDD VSS
+*.PININFO CLK:B OUT0:B OUT1:B OUT2:B OUT3:B VDD:B VSS:B
+XI8 CLK net25 OUT0 VDD VSS / hw5_1_DFF
+XI7 CLK net31 OUT1 VDD VSS / hw5_1_DFF
+XI6 CLK net37 OUT2 VDD VSS / hw5_1_DFF
+XI5 CLK net43 OUT3 VDD VSS / hw5_1_DFF
+XI3 VDD OUT0 net34 net25 VDD VSS / hw5_1_half_adder
+XI2 net34 OUT1 net40 net31 VDD VSS / hw5_1_half_adder
+XI1 net40 OUT2 net46 net37 VDD VSS / hw5_1_half_adder
+XI0 net46 OUT3 net44 net43 VDD VSS / hw5_1_half_adder
+.ENDS
+

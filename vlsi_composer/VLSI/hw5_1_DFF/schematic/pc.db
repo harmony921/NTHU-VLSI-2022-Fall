@@ -1,0 +1,28 @@
+#
+VLSI hw4_2_b_inv symbol
+I12
+I11
+I10
+I2
+I1
+I0
+I9
+#
+analogLib pmos4 symbol
+M11
+M10
+M3
+M0
+#
+analogLib nmos4 symbol
+M9
+M2
+M1
+M8
+#ISCELL
+basic iopin symbolr
+PIN4
+PIN3
+PIN2
+PIN1
+PIN0

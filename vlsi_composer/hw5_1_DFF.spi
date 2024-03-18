@@ -1,0 +1,59 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw5_1_DFF
+* View Name:     schematic
+* Netlisted on:  Dec 18 19:33:50 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_b_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_b_inv IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM0 OUT IN VDD VDD PM W=1.8u L=200.0n
+MM1 OUT IN VSS VSS NM W=600.0n L=200.0n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_DFF CLK D Q VDD VSS
+*.PININFO CLK:B D:B Q:B VDD:B VSS:B
+XI12 net112 Q VDD VSS / hw4_2_b_inv
+XI11 net76 net83 VDD VSS / hw4_2_b_inv
+XI10 Q net79 VDD VSS / hw4_2_b_inv
+XI2 net76 net75 VDD VSS / hw4_2_b_inv
+XI1 D net71 VDD VSS / hw4_2_b_inv
+XI0 CLK net67 VDD VSS / hw4_2_b_inv
+XI9 net120 net76 VDD VSS / hw4_2_b_inv
+MM11 net112 CLK net79 VDD PM W=800.0n L=200.0n
+MM10 net112 net67 net83 VDD PM W=800.0n L=200.0n
+MM3 net120 CLK net71 VDD PM W=800.0n L=200.0n
+MM0 net120 net67 net75 VDD PM W=800.0n L=200.0n
+MM9 net79 net67 net112 VSS NM W=800.0n L=200.0n
+MM2 net71 net67 net120 VSS NM W=800.0n L=200.0n
+MM1 net75 CLK net120 VSS NM W=800.0n L=200.0n
+MM8 net83 CLK net112 VSS NM W=800.0n L=200.0n
+.ENDS
+

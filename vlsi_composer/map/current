@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "hw5_2_PRBS"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/u108/u108034060/vlsi_composer/"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "VLSI/hw5_1_xor/schematic" "hw5_1_xor" )
+( "VLSI/hw5_2_PRBS/schematic" "hw5_2_PRBS" )
+( "VLSI/hw4_2_b_inv/schematic" "hw4_2_b_inv" )
+( "VLSI/hw5_1_DFF/schematic" "hw5_1_DFF" )
+ )
+( term
+ )
+( param
+ )
+( "hw5_1_DFF" "ihnl/cds2/map" )
+( "hw5_2_PRBS" "ihnl/cds3/map" )
+( "hw5_1_xor" "ihnl/cds0/map" )
+( "hw4_2_b_inv" "ihnl/cds1/map" )
+ )

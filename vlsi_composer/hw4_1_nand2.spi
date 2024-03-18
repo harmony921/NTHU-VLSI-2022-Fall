@@ -1,0 +1,36 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw4_1_nand2
+* View Name:     schematic
+* Netlisted on:  Dec 12 15:32:08 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_1_nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_1_nand2 A B OUT VDD VSS
+*.PININFO A:B B:B OUT:B VDD:B VSS:B
+MM0 OUT A VDD VDD P_18 W=1.8u L=180.00n
+MM1 OUT B VDD VDD P_18 W=1.8u L=180.00n
+MM3 OUT A net19 VSS N_18 W=1.2u L=180.00n
+MM4 net19 B VSS VSS N_18 W=1.2u L=180.00n
+.ENDS
+

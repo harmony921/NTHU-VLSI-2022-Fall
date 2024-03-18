@@ -1,0 +1,36 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw5_1_nand2
+* View Name:     schematic
+* Netlisted on:  Dec 18 19:43:26 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_nand2 A B OUT VDD VSS
+*.PININFO A:B B:B OUT:B VDD:B VSS:B
+MM4 net6 B VSS VSS NM W=250.00n L=180.00n
+MM3 OUT A net6 VSS NM W=250.00n L=180.00n
+MM1 OUT B VDD VDD PM W=250.00n L=180.00n
+MM0 OUT A VDD VDD PM W=250.00n L=180.00n
+.ENDS
+

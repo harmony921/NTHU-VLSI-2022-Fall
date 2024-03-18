@@ -1,0 +1,18 @@
+#
+VLSI hw4_2_inv_chain symbol
+I4
+#
+VLSI hw4_1_DFF symbol
+I1
+I0
+#ISCELL
+basic noConn symbol
+I3
+I2
+#ISCELL
+basic iopin symbolr
+PIN0
+PIN2
+PIN4
+PIN3
+PIN1

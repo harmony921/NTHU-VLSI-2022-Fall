@@ -1,0 +1,11 @@
+CADENCE IHNL01060
+$model
+VLSI/hw5_1_DFF/schematic hw5_1_DFF
+VLSI/hw4_2_b_inv/schematic hw4_2_b_inv
+VLSI/hw5_1_xor/schematic hw5_1_xor
+VLSI/hw5_2_PRBS/schematic hw5_2_PRBS
+$endmodel
+$net
+$endnet
+$param
+$endparam

@@ -1,0 +1,22 @@
+#
+VLSI hw4_1_inv symbol
+I9
+I8
+#
+VLSI hw4_1_nand2 symbol
+I7
+I6
+I5
+I4
+I3
+I2
+I1
+I0
+#ISCELL
+basic iopin symbolr
+PIN2
+PIN4
+PIN0
+PIN1
+PIN5
+PIN3

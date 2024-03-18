@@ -1,0 +1,14 @@
+#
+VLSI hw4_2_DFF_mas symbol
+I5
+I0
+#
+VLSI hw4_2_inv_chain symbol
+I4
+#ISCELL
+basic iopin symbolr
+PIN1
+PIN3
+PIN4
+PIN2
+PIN0

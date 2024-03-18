@@ -1,0 +1,16 @@
+#
+VLSI hw5_1_xor symbol
+I3
+#
+VLSI hw5_1_DFF symbol
+I2
+I1
+I0
+#ISCELL
+basic iopin symbolr
+PIN5
+PIN4
+PIN3
+PIN2
+PIN1
+PIN0

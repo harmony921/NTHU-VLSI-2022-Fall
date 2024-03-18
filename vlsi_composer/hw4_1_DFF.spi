@@ -1,0 +1,68 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw4_1_DFF
+* View Name:     schematic
+* Netlisted on:  Dec 14 23:09:39 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_1_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_1_inv IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM1 OUT IN VSS VSS N_18 W=600.0n L=180.00n
+MM0 OUT IN VDD VDD P_18 W=1.8u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_1_nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_1_nand2 A B OUT VDD VSS
+*.PININFO A:B B:B OUT:B VDD:B VSS:B
+MM0 OUT A VDD VDD P_18 W=1.8u L=180.00n
+MM1 OUT B VDD VDD P_18 W=1.8u L=180.00n
+MM3 OUT A net19 VSS N_18 W=1.2u L=180.00n
+MM4 net19 B VSS VSS N_18 W=1.2u L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_1_DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_1_DFF C D Q Q_b VDD VSS
+*.PININFO C:B D:B Q:B Q_b:B VDD:B VSS:B
+XI9 net6 net2 VDD VSS / hw4_1_inv
+XI8 C net6 VDD VSS / hw4_1_inv
+XI7 Q net11 Q_b VDD VSS / hw4_1_nand2
+XI6 net20 Q_b Q VDD VSS / hw4_1_nand2
+XI5 net20 net2 net11 VDD VSS / hw4_1_nand2
+XI4 net25 net2 net20 VDD VSS / hw4_1_nand2
+XI3 net25 net42 net36 VDD VSS / hw4_1_nand2
+XI2 net40 net36 net25 VDD VSS / hw4_1_nand2
+XI1 net40 net6 net42 VDD VSS / hw4_1_nand2
+XI0 D net6 net40 VDD VSS / hw4_1_nand2
+.ENDS
+

@@ -1,0 +1,20 @@
+#
+analogLib pmos4 symbol
+M0
+#
+analogLib nmos4 symbol
+M1
+#
+VLSI hw5_1_xor symbol
+I1
+#
+VLSI hw5_1_nand2 symbol
+I0
+#ISCELL
+basic iopin symbolr
+PIN4
+PIN5
+PIN6
+PIN2
+PIN1
+PIN0

@@ -1,0 +1,59 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw4_2_DFF_mas
+* View Name:     schematic
+* Netlisted on:  Dec 15 00:20:49 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_b_inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_b_inv IN OUT VDD VSS
+*.PININFO IN:B OUT:B VDD:B VSS:B
+MM0 OUT IN VDD VDD P_18 W=1.8u L=200.0n
+MM1 OUT IN VSS VSS N_18 W=600.0n L=200.0n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw4_2_DFF_mas
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw4_2_DFF_mas C D Q VDD VSS
+*.PININFO C:B D:B Q:B VDD:B VSS:B
+MM9 net052 net7 net013 VSS N_18 W=800.0n L=200.0n
+MM2 net39 net7 net4 VSS N_18 W=800.0n L=200.0n
+MM1 net1 C net4 VSS N_18 W=800.0n L=200.0n
+MM8 net048 C net013 VSS N_18 W=800.0n L=200.0n
+MM11 net013 C net052 VDD P_18 W=800.0n L=200.0n
+MM10 net013 net7 net048 VDD P_18 W=800.0n L=200.0n
+MM3 net4 C net39 VDD P_18 W=800.0n L=200.0n
+MM0 net4 net7 net1 VDD P_18 W=800.0n L=200.0n
+XI9 net4 net36 VDD VSS / hw4_2_b_inv
+XI12 net013 Q VDD VSS / hw4_2_b_inv
+XI11 net36 net048 VDD VSS / hw4_2_b_inv
+XI10 Q net052 VDD VSS / hw4_2_b_inv
+XI2 net36 net1 VDD VSS / hw4_2_b_inv
+XI1 D net39 VDD VSS / hw4_2_b_inv
+XI0 C net7 VDD VSS / hw4_2_b_inv
+.ENDS
+

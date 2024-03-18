@@ -1,0 +1,232 @@
+\o Program:		@(#)$CDS: libManager.exe version Exp 01/19/2010 20:09 (ocelot-linux) $
+\o Sub version:		sub-version none
+\o Arguments:		-unmapped -mpssession icfb17458 -mpshost ws40 
+\o Working Directory:	ws40:/home/u108/u108034060/vlsi_composer
+\o Extended color mode (TrueColor 32 0x44) in use.
+\o Warning: LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib Line 1 redefines
+\o LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o Insert UNDEFINE cdsDefTechLib
+\o before DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib
+\o Or remove or comment out DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB analogLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+\o LIB analogLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE analogLib
+\o before DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB functional from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+\o LIB functional from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE functional
+\o before DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB basic from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+\o LIB basic from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE basic
+\o before DEFINE basic
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE basic
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB US_8ths from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+\o LIB US_8ths from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE US_8ths
+\o before DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB rfLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 1 redefines
+\o LIB rfLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfLib
+\o before DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB rfExamples from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 2 redefines
+\o LIB rfExamples from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfExamples
+\o before DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB ahdlLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 3 redefines
+\o LIB ahdlLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE ahdlLib
+\o before DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB VLSI from File /home/u108/u108034060/vlsi_composer/cds.lib Line 7 redefines
+\o LIB VLSI from the same file (defined earlier.)
+\o Warning: The directory: '/home/u108/u108034060/test' does not exist
+\o 	but was defined in libFile '/home/u108/u108034060/cds.lib' for Lib 'test'.
+\o Library Manager customization server connected.
+MPS service: map window
+\o Log file is "/home/u108/u108034060/vlsi_composer/libManager.log".
+Opening libManager window.
+Main selection: VLSI hw4_1 schematic
+Invoking command (editRename).
+Showing dialog "Rename Cell VLSI/hw4_1" (renameDialog).
+Closing dialog "Rename Cell VLSI/hw4_1" (renameDialog).
+Invoking command (editRename).
+Showing dialog "Rename Cell VLSI/hw4_1" (renameDialog).
+Dialog activated Ok in "Rename Cell VLSI/hw4_1" (renameDialog).
+\o Renaming cell "hw4_1" to "hw4_1_DFF" in library "VLSI".
+Showing dialog "Rename Monitor - 5 Files" (copyProgressDialog).
+\o Copying VLSI/hw4_1/schematic
+\o Transfer of 5 files phase complete in  0:00:00
+Closing dialog "Rename Monitor - 5 Files" (copyProgressDialog).
+\o Performing instance update.
+\o Start running ccpCdbaUpdtr ...
+\o *WARNING* LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib Line 1 redefines
+\o LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o Insert UNDEFINE cdsDefTechLib
+\o before DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib
+\o Or remove or comment out DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB analogLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+\o LIB analogLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE analogLib
+\o before DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB functional from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+\o LIB functional from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE functional
+\o before DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB basic from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+\o LIB basic from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE basic
+\o before DEFINE basic
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE basic
+\o ccpCdbaUpdtr ran successfully ...
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB US_8ths from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+\o LIB US_8ths from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE US_8ths
+\o before DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB rfLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 1 redefines
+\o LIB rfLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfLib
+\o before DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB rfExamples from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 2 redefines
+\o LIB rfExamples from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfExamples
+\o before DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB ahdlLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 3 redefines
+\o LIB ahdlLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE ahdlLib
+\o before DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o *WARNING* LIB VLSI from File /home/u108/u108034060/vlsi_composer/cds.lib Line 7 redefines
+\o LIB VLSI from the same file (defined earlier.)
+\o *WARNING* The directory: '/home/u108/u108034060/test' does not exist
+\o 	but was defined in libFile '/home/u108/u108034060/cds.lib' for Lib 'test'.
+Closing dialog "Rename Cell VLSI/hw4_1" (renameDialog).
+\o Warning: LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib Line 1 redefines
+\o LIB cdsDefTechLib from File /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o Insert UNDEFINE cdsDefTechLib
+\o before DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/dfII/cds.lib
+\o Or remove or comment out DEFINE cdsDefTechLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/share/cdssetup/dfII/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB analogLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 1 redefines
+\o LIB analogLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE analogLib
+\o before DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE analogLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB functional from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib Line 2 redefines
+\o LIB functional from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Insert UNDEFINE functional
+\o before DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o Or remove or comment out DEFINE functional
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB basic from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 1 redefines
+\o LIB basic from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE basic
+\o before DEFINE basic
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE basic
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB US_8ths from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib Line 2 redefines
+\o LIB US_8ths from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Insert UNDEFINE US_8ths
+\o before DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o Or remove or comment out DEFINE US_8ths
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB rfLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 1 redefines
+\o LIB rfLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfLib
+\o before DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB rfExamples from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 2 redefines
+\o LIB rfExamples from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE rfExamples
+\o before DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE rfExamples
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB ahdlLib from File /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib Line 3 redefines
+\o LIB ahdlLib from File /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Insert UNDEFINE ahdlLib
+\o before DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC51.41.151/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o Or remove or comment out DEFINE ahdlLib
+\o     in /usr/cadtool/cadence/IC/IC_06.18.150/tools.lnx86/dfII/etc/cdsDotLibs/spectre/cds.lib
+\o to suppress this warning message.
+\o Warning: LIB VLSI from File /home/u108/u108034060/vlsi_composer/cds.lib Line 7 redefines
+\o LIB VLSI from the same file (defined earlier.)
+\o Warning: The directory: '/home/u108/u108034060/test' does not exist
+\o 	but was defined in libFile '/home/u108/u108034060/cds.lib' for Lib 'test'.
+MPS request: update library list
+Main selection: VLSI hw4_1_DFF schematic
+\o libManager is exiting.

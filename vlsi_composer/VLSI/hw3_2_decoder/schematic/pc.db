@@ -1,0 +1,54 @@
+#
+VLSI hw3_2_inv3 symbol
+I40
+I27
+I26
+I25
+I24
+I17
+I16
+I37
+#
+VLSI hw3_2_nand3 symbol
+I39
+I30
+I29
+I28
+I23
+I18
+I3
+I38
+#
+VLSI hw3_2_inv2 symbol
+I33
+I32
+I31
+I19
+I22
+I2
+#
+VLSI hw3_2_inv1 symbol
+I36
+I35
+I34
+I20
+I21
+I1
+#ISCELL
+basic iopin symbolr
+PIN12
+PIN11
+PIN13
+PIN14
+PIN15
+PIN16
+PIN19
+PIN10
+PIN9
+PIN8
+PIN7
+PIN6
+PIN17
+PIN0
+PIN20
+PIN18

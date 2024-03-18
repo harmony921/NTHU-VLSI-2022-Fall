@@ -1,0 +1,66 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  VLSI
+* Top Cell Name: hw5_1_half_adder
+* View Name:     schematic
+* Netlisted on:  Dec 18 19:55:24 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_xor
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_xor A B VDD VSS Y
+*.PININFO A:B B:B VDD:B VSS:B Y:B
+MM5 Y net9 B VSS NM W=250.00n L=180.00n
+MM4 Y B net9 VSS NM W=250.00n L=180.00n
+MM3 net9 A VSS VSS NM W=250.00n L=180.00n
+MM2 Y A B VDD PM W=250.00n L=180.00n
+MM1 Y B A VDD PM W=250.00n L=180.00n
+MM0 net9 A VDD VDD PM W=250.00n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_nand2 A B OUT VDD VSS
+*.PININFO A:B B:B OUT:B VDD:B VSS:B
+MM4 net6 B VSS VSS NM W=250.00n L=180.00n
+MM3 OUT A net6 VSS NM W=250.00n L=180.00n
+MM1 OUT B VDD VDD PM W=250.00n L=180.00n
+MM0 OUT A VDD VDD PM W=250.00n L=180.00n
+.ENDS
+
+************************************************************************
+* Library Name: VLSI
+* Cell Name:    hw5_1_half_adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT hw5_1_half_adder A B C S VDD VSS
+*.PININFO A:B B:B C:B S:B VDD:B VSS:B
+MM0 C net20 VDD VDD PM W=250.00n L=180.00n
+MM1 C net20 VSS VSS NM W=250.00n L=180.00n
+XI1 A B VDD VSS S / hw5_1_xor
+XI0 A B net20 VDD VSS / hw5_1_nand2
+.ENDS
+

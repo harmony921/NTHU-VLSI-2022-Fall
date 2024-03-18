@@ -1,0 +1,7 @@
+-- File Created by u108034060 at Sat Oct  8 19:49:25 2022
+-- assisted by CdsLibEditor
+INCLUDE /home/u108/u108034060/cds.lib
+
+INCLUDE /usr/cadtool/cadence/IC/IC51.41.151/share/cdssetup/cds.lib
+DEFINE VLSI /home/u108/u108034060/vlsi_composer/VLSI
+DEFINE VLSI /home/u108/u108034060/vlsi_composer/VLSI
